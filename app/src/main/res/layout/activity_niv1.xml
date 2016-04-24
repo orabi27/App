@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.app.quiz.quizz.niv1Activity">
+
+    <ImageButton
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/imageButton"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:background="#ffffff"
+        android:src="@drawable/real"
+        android:scaleType="fitCenter" />
+
+    <ImageButton
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/imageButton2"
+        android:layout_alignBottom="@+id/imageButton"
+        android:layout_toEndOf="@+id/imageButton"
+        android:background="#ffffff"
+        android:src="@drawable/barca"
+        android:scaleType="fitCenter" />
+
+    <ImageButton
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/imageButton3"
+        android:layout_alignBottom="@+id/imageButton2"
+        android:layout_toEndOf="@+id/imageButton2"
+        android:scaleType="fitCenter"
+        android:src="@drawable/bayern"
+        android:background="#ffffff" />
+
+    <ImageButton
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/imageButton4"
+        android:layout_below="@+id/imageButton"
+        android:layout_toStartOf="@+id/imageButton2"
+        android:src="@drawable/bouroussia"
+        android:background="#ffffff"
+        android:scaleType="fitCenter" />
+
+    <ImageButton
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/imageButton5"
+        android:layout_alignBottom="@+id/imageButton4"
+        android:layout_toStartOf="@+id/imageButton3"
+        android:src="@drawable/chelsea"
+        android:background="#ffffff"
+        android:scaleType="fitCenter" />
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/imageView2"
+        android:src="@drawable/arsenal"
+        android:background="#ffffff"
+        android:scaleType="fitCenter"
+        android:layout_below="@+id/imageButton4"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/imageButton6"
+        android:src="@drawable/milano"
+        android:scaleType="fitCenter"
+        android:background="#ffffff"
+        android:layout_below="@+id/imageButton5"
+        android:layout_alignEnd="@+id/imageButton5" />
+
+    <ImageButton
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/imageButton7"
+        android:layout_above="@+id/imageButton6"
+        android:layout_toEndOf="@+id/imageButton5"
+        android:src="@drawable/manutd"
+        android:scaleType="fitCenter"
+        android:background="#ffffff" />
+
+    <ImageButton
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/imageButton8"
+        android:layout_alignBottom="@+id/imageButton6"
+        android:layout_toEndOf="@+id/imageButton6"
+        android:background="#ffffff"
+        android:src="@drawable/mancity"
+        android:scaleType="fitCenter" />
+
+    <ImageButton
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/imageButton9"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/imageButton6"
+        android:src="@drawable/inter"
+        android:scaleType="fitCenter"
+        android:background="#ffffff" />
+
+    <ImageButton
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/imageButton10"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/imageButton8"
+        android:background="#ffffff"
+        android:src="@drawable/juve"
+        android:scaleType="fitCenter" />
+
+    <ImageButton
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/imageButton11"
+        android:layout_alignBottom="@+id/imageButton10"
+        android:layout_toEndOf="@+id/imageButton10"
+        android:scaleType="fitCenter"
+        android:src="@drawable/valence"
+        android:background="#ffffff" />
+
+</RelativeLayout>

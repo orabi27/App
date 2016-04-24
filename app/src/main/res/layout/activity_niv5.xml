@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.app.quiz.quizz.Niv5Activity">
+
+    <ImageButton
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/imageButton48"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:background="#ffffff"
+        android:src="@drawable/auxerre"
+        android:scaleType="fitCenter" />
+
+    <ImageButton
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/imageButton49"
+        android:layout_alignBottom="@+id/imageButton48"
+        android:layout_toEndOf="@+id/imageButton48"
+        android:background="#ffffff"
+        android:src="@drawable/bilbao"
+        android:scaleType="fitCenter" />
+
+    <ImageButton
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/imageButton50"
+        android:layout_alignBottom="@+id/imageButton49"
+        android:layout_toEndOf="@+id/imageButton49"
+        android:background="#ffffff"
+        android:src="@drawable/bastia"
+        android:scaleType="fitCenter" />
+
+    <ImageButton
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/imageButton51"
+        android:layout_below="@+id/imageButton48"
+        android:layout_toStartOf="@+id/imageButton49"
+        android:src="@drawable/zurich"
+        android:scaleType="fitCenter"
+        android:background="#ffffff" />
+
+    <ImageButton
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/imageButton52"
+        android:src="@drawable/deportivolacoruna"
+        android:scaleType="fitCenter"
+        android:background="#ffffff"
+        android:layout_below="@+id/imageButton48"
+        android:layout_toEndOf="@+id/imageButton48" />
+
+    <ImageButton
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/imageButton53"
+        android:src="@drawable/everton"
+        android:scaleType="fitCenter"
+        android:background="#ffffff"
+        android:layout_below="@+id/imageButton49"
+        android:layout_toEndOf="@+id/imageButton52" />
+
+    <ImageButton
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/imageButton54"
+        android:layout_below="@+id/imageButton51"
+        android:layout_toStartOf="@+id/imageButton52"
+        android:background="#ffffff"
+        android:src="@drawable/genoa"
+        android:scaleType="fitCenter" />
+
+    <ImageButton
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/imageButton55"
+        android:layout_alignTop="@+id/imageButton54"
+        android:layout_toStartOf="@+id/imageButton53"
+        android:background="#ffffff"
+        android:src="@drawable/hamburger"
+        android:scaleType="fitCenter" />
+
+    <ImageButton
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/imageButton56"
+        android:layout_alignTop="@+id/imageButton55"
+        android:layout_toEndOf="@+id/imageButton55"
+        android:background="#ffffff"
+        android:src="@drawable/lorient"
+        android:scaleType="fitCenter" />
+
+    <ImageButton
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/imageButton57"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/imageButton55"
+        android:scaleType="fitCenter"
+        android:background="#ffffff"
+        android:src="@drawable/rcd" />
+
+    <ImageButton
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/imageButton58"
+        android:src="@drawable/werderbremen"
+        android:scaleType="fitCenter"
+        android:background="#ffffff"
+        android:layout_alignBottom="@+id/imageButton59"
+        android:layout_toEndOf="@+id/imageButton54" />
+
+    <ImageButton
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/imageButton59"
+        android:src="@drawable/cska"
+        android:scaleType="fitCenter"
+        android:background="#ffffff"
+        android:layout_below="@+id/imageButton56"
+        android:layout_toEndOf="@+id/imageButton55" />
+</RelativeLayout>

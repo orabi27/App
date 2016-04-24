@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.app.quiz.quizz.NivActivity"
+    android:background="#0080ff">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:inputType="textMultiLine"
+        android:text="Choisissez un niveau"
+        android:textColor="#ffffff"
+        android:textSize="25.0sp"
+        android:textStyle="bold"
+        android:id="@+id/textView2" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Niveau 2"
+        android:id="@+id/button4"
+        android:layout_gravity="center"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:textSize="25.0sp"
+        android:background="#ffffff"
+        android:layout_below="@+id/button"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp"
+        android:onClick="onclick"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Niveau3"
+        android:id="@+id/button5"
+        android:background="#ffffff"
+        android:layout_below="@+id/button4"
+        android:layout_gravity="center"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="5dp"
+        android:textSize="25.0sp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Niveau 5"
+        android:id="@+id/button7"
+        android:background="#ffffff"
+        android:layout_gravity="center"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:textSize="25.0sp"
+        android:layout_below="@+id/button6"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/textView2"
+        android:layout_marginTop="5dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Niveau 4"
+        android:id="@+id/button6"
+        android:layout_gravity="center"
+        android:background="#ffffff"
+        android:textSize="25sp"
+        android:layout_below="@+id/button5"
+        android:layout_alignStart="@+id/button5"
+        android:layout_alignEnd="@+id/button5"
+        android:layout_marginTop="5dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nivau 1"
+        android:id="@+id/button"
+        android:background="#ffffff"
+        android:textSize="25sp"
+        android:onClick="onclick"
+        android:layout_below="@+id/textView2"
+        android:layout_alignStart="@+id/button5"
+        android:layout_alignEnd="@+id/button4"
+        android:layout_marginTop="5dp"/>
+
+</RelativeLayout>
