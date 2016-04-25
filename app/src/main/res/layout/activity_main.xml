@@ -53,7 +53,7 @@
                     android:textColor="#ffffff"
                     android:textSize="25.0sp"
                     android:textStyle="bold"
-                    android:background="#d15400" />
+                    android:background="#ffffff" />
             </LinearLayout>
         </LinearLayout>
         <LinearLayout

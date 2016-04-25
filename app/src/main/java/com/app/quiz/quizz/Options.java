@@ -60,4 +60,9 @@ public class Options extends Activity {
             }
         });
     }
+
+    public void stat(View view) {
+        Intent intent =new Intent(Options.this,ResultActivity.class);
+        startActivity(intent);
+    }
 }
