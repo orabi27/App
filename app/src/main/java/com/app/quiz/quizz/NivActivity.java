@@ -21,7 +21,7 @@ public class NivActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(NivActivity.this,niv1Activity.class);
+                Intent intent = new Intent(NivActivity.this,QuestionActivity1.class);
                 startActivity(intent);
                 finish();
             }
@@ -31,7 +31,7 @@ public class NivActivity extends AppCompatActivity {
         button4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent =new Intent(NivActivity.this,Niv2Activity.class);
+                Intent intent =new Intent(NivActivity.this,QuestionActivity2.class);
                 startActivity(intent);
                 finish();
 
@@ -40,7 +40,7 @@ public class NivActivity extends AppCompatActivity {
         button5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent =new Intent(NivActivity.this,Niv3Activity.class);
+                Intent intent =new Intent(NivActivity.this,QuestionActivity3.class);
                 startActivity(intent);
                 finish();
             }

@@ -17,10 +17,10 @@ import java.util.concurrent.TimeUnit;
 /**
  * Created by acer on 06-Apr-16.
  */
-public class QuestionActivity1 extends Activity {
+public class QuestionActivity3 extends Activity {
     List<Question> quesList;
-    int score = 0;
-    int qid = 0;
+    int score = 40;
+    int qid = 40;
     Question currentQ;
     TextView txtQuestion, times, scored;
     Button button1, button2, button3;
@@ -29,7 +29,7 @@ public class QuestionActivity1 extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_question3);
         QuizHelper db = new QuizHelper(this); // my question bank class
         quesList = db.getAllQuestions(); // this will fetch all quetonall questions
         currentQ = quesList.get(qid); // the current question
@@ -74,69 +74,69 @@ public class QuestionActivity1 extends Activity {
     }
     public void getAnswer(String AnswerString) {
         if (currentQ.getANSWER().equals(AnswerString)) {
-            if(score==0) {
-                AnswerImageView.setImageResource(R.drawable.barca);
-            }else if (score==1){
-                AnswerImageView.setImageResource(R.drawable.sevilla);
+            if(score==40) {
+                AnswerImageView.setImageResource(R.drawable.bastia);
+            }else if (score==41){
+                AnswerImageView.setImageResource(R.drawable.brd);
 
-            }else if (score==2){
-                AnswerImageView.setImageResource(R.drawable.valence);
+            }else if (score==42){
+                AnswerImageView.setImageResource(R.drawable.everton);
 
-            }else if (score==3){
-                AnswerImageView.setImageResource(R.drawable.villareal);
+            }else if (score==43){
+                AnswerImageView.setImageResource(R.drawable.genoa);
 
-            }else if (score==4){
-                AnswerImageView.setImageResource(R.drawable.atleticomadrid);
+            }else if (score==44){
+                AnswerImageView.setImageResource(R.drawable.fenerbahce);
 
-            }else if (score==5){
-                AnswerImageView.setImageResource(R.drawable.rcd);
+            }else if (score==45){
+                AnswerImageView.setImageResource(R.drawable.hamburger);
 
-            }else if (score==6) {
-                AnswerImageView.setImageResource(R.drawable.ajax);
+            }else if (score==46) {
+                AnswerImageView.setImageResource(R.drawable.leverkusen);
 
-            }else if (score==7) {
-                AnswerImageView.setImageResource(R.drawable.chelsea);
+            }else if (score==47) {
+                AnswerImageView.setImageResource(R.drawable.lorient);
 
-            }else if (score==8) {
-                AnswerImageView.setImageResource(R.drawable.asmonaco);
+            }else if (score==48) {
+                AnswerImageView.setImageResource(R.drawable.marseille);
 
-            }else if (score==9) {
-                AnswerImageView.setImageResource(R.drawable.juve);
+            }else if (score==49) {
+                AnswerImageView.setImageResource(R.drawable.montpellier);
 
-            }else if (score==10) {
-                AnswerImageView.setImageResource(R.drawable.bouroussia);
+            }else if (score==50) {
+                AnswerImageView.setImageResource(R.drawable.newcastle);
 
-            }else if (score==11) {
-                AnswerImageView.setImageResource(R.drawable.milano);
+            }else if (score==51) {
+                AnswerImageView.setImageResource(R.drawable.olympiacos);
 
-            }else if (score==12) {
-                AnswerImageView.setImageResource(R.drawable.bayern);
+            }else if (score==52) {
+                AnswerImageView.setImageResource(R.drawable.shakhtardonetsk);
 
-            }else if (score==13) {
-                AnswerImageView.setImageResource(R.drawable.roma);
+            }else if (score==53) {
+                AnswerImageView.setImageResource(R.drawable.sporting);
 
-            }else if (score==14) {
-                AnswerImageView.setImageResource(R.drawable.benfica);
+            }else if (score==54) {
+                AnswerImageView.setImageResource(R.drawable.werderbremen);
 
-            }else if (score==15) {
-                AnswerImageView.setImageResource(R.drawable.leicester);
+            }else if (score==55) {
+                AnswerImageView.setImageResource(R.drawable.porto);
 
-            }else if (score==16) {
-                AnswerImageView.setImageResource(R.drawable.palermo);
+            }else if (score==56) {
+                AnswerImageView.setImageResource(R.drawable.rangers);
 
-            }else if (score==17) {
-                AnswerImageView.setImageResource(R.drawable.psg);
+            }else if (score==57) {
+                AnswerImageView.setImageResource(R.drawable.saintetien);
 
-            }else if (score==18) {
-                AnswerImageView.setImageResource(R.drawable.lazio);
+            }else if (score==58) {
+                AnswerImageView.setImageResource(R.drawable.standard);
 
             }
             score++;
             scored.setText("Score : " + score);
         } else {
 
-           // AnswerImageView.setImageResource(R.drawable.barca);
-            Intent intent = new Intent(QuestionActivity1.this,
+            // AnswerImageView.setImageResource(R.drawable.barca);
+            Intent intent = new Intent(QuestionActivity3.this,
                     ResultActivity.class);
             Bundle b = new Bundle();
             b.putInt("score", score);
@@ -144,11 +144,11 @@ public class QuestionActivity1 extends Activity {
             startActivity(intent);
             finish();
         }
-        if (qid < 20) {
+        if (qid < 60) {
             currentQ = quesList.get(qid);
             setQuestionView();
         } else {
-            Intent intent = new Intent(QuestionActivity1.this,
+            Intent intent = new Intent(QuestionActivity3.this,
                     ResultActivity.class);
             Bundle b = new Bundle();
             b.putInt("score", score);
@@ -167,7 +167,7 @@ public class QuestionActivity1 extends Activity {
         @Override
         public void onFinish() {
             times.setText("Time is up");
-            Intent intent = new Intent(QuestionActivity1.this,
+            Intent intent = new Intent(QuestionActivity3.this,
                     ResultActivity.class);
             Bundle b = new Bundle();
             b.putInt("score", score);

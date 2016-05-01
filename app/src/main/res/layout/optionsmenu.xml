@@ -42,7 +42,8 @@
         android:text="Statistiques"
         android:textColor="#000000"
         android:textSize="25.0sp"
-        android:onClick="stat"/>
+        android:onClick="onclick"
+        android:visibility="visible" />
     <Button
         android:id="@+id/btnhard"
         android:layout_width="fill_parent"
@@ -55,7 +56,8 @@
         android:gravity="center"
         android:text="Se connecter"
         android:textColor="#000000"
-        android:textSize="25.0sp" />
+        android:textSize="25.0sp"
+        android:visibility="visible" />
     <Button
         android:id="@+id/btntime"
         android:layout_width="fill_parent"
@@ -81,5 +83,6 @@
         android:gravity="center"
         android:text="Jouer By Jasser"
         android:textColor="#000000"
-        android:textSize="25.0sp" />
+        android:textSize="25.0sp"
+        android:visibility="visible" />
 </LinearLayout>

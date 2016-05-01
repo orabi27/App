@@ -31,7 +31,7 @@ public class Options extends Activity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Options.this,
-                        QuestionActivity1.class);
+                        NivActivity.class);
                 startActivity(intent);
                 finish();
             }
@@ -50,19 +50,19 @@ public class Options extends Activity {
           public void onClick(View v) {
                 Intent intent = new Intent(Options.this,NivActivity.class);
                 startActivity(intent);
+                finish();
             }
 
         });
         btnintermediate.setOnClickListener(new View.OnClickListener() {
            @Override
             public void onClick(View v) {
-//please implement your own logic
+               Intent intent = new Intent(Options.this,StatActivity.class);
+               startActivity(intent);
+               finish();
             }
         });
     }
 
-    public void stat(View view) {
-        Intent intent =new Intent(Options.this,ResultActivity.class);
-        startActivity(intent);
-    }
+
 }

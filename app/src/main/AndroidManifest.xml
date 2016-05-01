@@ -39,7 +39,14 @@
         <activity android:name=".Niv2Activity" />
         <activity android:name=".Niv3Activity" />
         <activity android:name=".Niv4Activity" />
-        <activity android:name=".Niv5Activity"></activity>
+        <activity android:name=".Niv5Activity" />
+        <activity android:name=".StatActivity" />
+        <activity
+            android:name=".Niveau1Activity"
+            android:label="@string/title_activity_niveau1"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".QuestionActivity2" />
+        <activity android:name=".QuestionActivity3"></activity>
     </application>
 
 </manifest>
